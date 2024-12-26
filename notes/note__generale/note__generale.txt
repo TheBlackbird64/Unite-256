@@ -1,0 +1,4 @@
+Si il y a des fuites de mémoires c'est :
+- création particules ds event 15 effets
+
+Bug relou global.focus qui passe à -1 des fois donc dans debug on empèche ça

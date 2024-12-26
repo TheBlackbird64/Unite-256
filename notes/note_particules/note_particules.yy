@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"Note_particules",
+  "name":"Note_particules",
+  "parent":{
+    "name":"Unite-256",
+    "path":"Unite-256.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

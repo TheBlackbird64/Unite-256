@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Sc_fonctions_event_jeu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sc_fonctions_event_jeu",
+  "parent":{
+    "name":"_General",
+    "path":"folders/_General.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

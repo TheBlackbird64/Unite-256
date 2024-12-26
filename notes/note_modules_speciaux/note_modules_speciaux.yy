@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"Note_modules_speciaux",
+  "name":"Note_modules_speciaux",
+  "parent":{
+    "name":"z_documentation",
+    "path":"folders/z_documentation.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

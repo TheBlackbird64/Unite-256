@@ -1,0 +1,1 @@
+tab_txt = ["As-tu entendu parler des orbes secrètes? Il s'agit d'artéfacs rares!", "Il y en aurait une sur chaque planète qui serait bien cachée. Je me demande à quoi elles ressemblent!"]

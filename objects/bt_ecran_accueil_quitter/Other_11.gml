@@ -1,0 +1,1 @@
+create_window(fen_ecran_accueil_quitter, 0.3, 683, 384)

@@ -1,0 +1,19 @@
+au début, les dépenseurs (her_depense_energie) sont sans énergie.
+
+Le système électrique fonctionne en répétant à chaque étape:
+	- mettre tous les dépenseurs connecté au générateur en dernier en mode sans
+énergie : sys_elec_energie = false
+	- le générateur parcourt les transmetteurs alentours en envoyant un "message" (event 4), ils se transmettent
+le message, et quand ils détectent les dépenseurs, il est connecté au générateur et ils leur
+donnent l'énergie.
+
+Ce système permet de désactiver les dépenseurs automatiquement dès qu'ils ne sont plus connectés
+
+
+PRISE EN CHARGE (+ :permis; - :non permis):
++ dépense d'énergie maximum par générateur réglable
++ mouvement des générateurs, transmetteurs, et utilisateurs d'énergie
++ plusieurs systèmes complets indépendant(un système=générateur; transmetteurs; dépenseurs) dans une seule
+pièce
+
+- plusieurs générateurs dans le même système

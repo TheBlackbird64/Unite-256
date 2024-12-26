@@ -1,0 +1,1 @@
+var_pause = not var_pause

@@ -1,0 +1,39 @@
+organisation (héritage):
+
+her_solide (détecté par lignes)
+	-> her_murs (ciblé par grid ennemi)
+		-> ttes instances mur, meme ceux qui se déplacent
+	-> her_vie (ciblé par les armes + explosions)
+		-> her_robots (système lignes adaptatives) (détecté par plateformes)
+			-> joueur
+			-> ennemis
+			-> her_PNJ [allow_explosion=false]
+		-> her_mur_vie (mur/vitre cassable, ...) [allow_explosion=false] (ciblé par grid ennemi même après destruction)
+
+
+plateforme: si elle se déplace peut deplacer her_robots
+
+Tout les her_robots: dep_longV, dep_longH, dep_ecartV, dep_ecartH défini ds créer -> variables pr lignes
+
+dep_verif_mur() -> detecte les autres her_solide et agis en conséquence.
+deplacer_mur(x, y) -> déplace l'obj et pour chaque mouv liste tout les her_robots (dans une zone alentour
+pour économiser tps calcul) et appelle dep_verif_mur() pour chacun.
+deplacer_robot(x, y) -> déplace le robot  et pour chaque mouv appelle dep_verif_mur().
+
+murs: se déplacent avec deplacer_mur(x, y)
+her_robots: se déplace avec deplacer_robot(x, y), ET appeler deplacer_robot(x, y) lors d'une rotation.
+
+
+  PRISE EN CHARGE (+ :permis; - :non permis; ->:obligation):
++ système de déplacement asser précis, permet dep dans 8 directions
++ murs qui bougent compatiples avec player, ennemis (risque de petits bugs si bcp d'ennemis) et pnj 
++ les her_robots ne passe pas l'un sur l'autre
+
+- système de ciblage ne détecte pas les her_robots
+- pour l'instant ne permet que des robots carrés (à améliorer)
+
+
+-> les robots qui utilisent les paths doivent régler leurs lignes à la taille d'une cell de la grille utilisé
+-> les robots qui utilisent les paths doivent utiliser dep_path() au lieu de path_start()
+-> les her_robots qui veulent se déplacer doivent utiliser deplacer_robot()
+-> les murs qui veulent se déplacer doivent utiliser deplacer_mur()

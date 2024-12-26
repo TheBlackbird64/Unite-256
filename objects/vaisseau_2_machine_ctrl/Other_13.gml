@@ -1,0 +1,1 @@
+cinematique(["Cette machine vous permet de réparer votre robot et de lui remettre la vie et l'énergie au maximum. Voulez-vous le réparer?"], ["Oui", "Non"])

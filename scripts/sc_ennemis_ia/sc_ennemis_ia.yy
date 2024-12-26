@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Sc_ennemis_ia",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sc_ennemis_ia",
+  "parent":{
+    "name":"Ennemis",
+    "path":"folders/Ennemis.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,32 @@
+Les ennemis héritent tous de her_ennemis pour pouvoir être reconnus.
+organisation (héritage):
+
+her_ennemis
+	IA_1
+		robot1
+		robot2
+		robot3
+	IA_2
+		robot4
+		robot5
+	IA_3
+		robot6
+	...
+	boss1
+	boss2
+
+Les projectiles sont codés indépendemment, ils héritent de her_arme_ennemis. Ils ont chacun une variable
+equipe, qui sert à agir uniquement sur les her_vie d'une équipe différente.
+Dans une IA, seul une partie du programme de tir n'est pas programmé. La recharge est incluse et réglable, et
+un event est appelé pour le tir, qui n'est pas configuré, donc à chaque robot de le paramétrer. L'animation 
+est à faire pour chaque robot.
+
+PRISE EN CHARGE (+ :permis; - :non permis):
++ paramètres réglables (vie, vitesse, recharge, ...)
++ event tir personnalisable (type de projectiles, nombres, autre)
++ un projectile peut être utilisé par plusieurs
++ système d'équipe
+
+? armes de player utilisables par ennemis et inversement ? (fait perdre la reconnaissance d'un tir)
+
+- système de ciblage très approximatif (à régler)

@@ -1,0 +1,21 @@
+part_local = part_type_create()
+part_type_shape(part_local, pt_shape_flare)
+part_type_alpha2(part_local, 1, 0.5)
+part_type_color_rgb(part_local, 0, 175, 0, 0, 255, 255)
+part_type_size(part_local, 0.3, 0.5, -0.02, 0.1)
+part_type_life(part_local, 2, 10)
+part_type_direction(part_local, 0, 359, 0, 15)
+part_type_speed(part_local, 0.3, 1.5, -0.01, 0)
+
+part_emit = part_emitter_create(global.part_sys)
+
+part_sys_local = part_system_create()
+part_system_depth(part_sys_local, depth)
+
+part_emit = part_emitter_create(part_sys_local)
+
+
+part_emitter_region(global.part_sys, part_emit, x-largeur(), x+largeur(), y-hauteur(), y+hauteur(), ps_shape_rectangle, ps_distr_linear)
+part_emitter_burst(global.part_sys, part_emit, part_local, 1)
+
+part_system_position(part_sys_local, x, y)

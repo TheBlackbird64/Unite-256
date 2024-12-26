@@ -1,0 +1,1 @@
+cinematique(["Voulez vous sauvegarder la partie?"], ["Oui", "Non"])
