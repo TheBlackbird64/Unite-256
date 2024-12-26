@@ -1,0 +1,1 @@
+tab_txt = ["Attention à ne pas tomber dans l'eau! Tu n'est pas protégé contre elle."]

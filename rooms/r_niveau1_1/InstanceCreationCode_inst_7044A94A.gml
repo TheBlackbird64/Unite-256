@@ -1,0 +1,1 @@
+tab_txt = ["Pensez à fouiller les recoins, il peut y avoir des choses intéressantes!"]

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Sc_code_rooms",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sc_code_rooms",
+  "parent":{
+    "name":"carte",
+    "path":"folders/Vaisseau/3-cockpit/carte.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

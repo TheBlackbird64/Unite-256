@@ -1,0 +1,1 @@
+create_window(fen_menu_pause_quitter, cam_sync_sc(0.25), cam_milieu_x(), cam_milieu_y())

@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"Note_ennemis",
+  "name":"Note_ennemis",
+  "parent":{
+    "name":"z_documentation",
+    "path":"folders/z_documentation.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"Note_effets",
+  "name":"Note_effets",
+  "parent":{
+    "name":"z_documentation",
+    "path":"folders/z_documentation.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

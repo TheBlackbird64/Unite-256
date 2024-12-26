@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Sc_fonctions_deplacement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sc_fonctions_deplacement",
+  "parent":{
+    "name":"_General",
+    "path":"folders/_General.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

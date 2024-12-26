@@ -1,0 +1,30 @@
+sys_elec_id_transmission = 0
+
+part_energie = part_type_create()
+part_type_alpha2(part_energie, 0.8, 0.2)
+part_type_color_rgb(part_energie, 0, 0, 0, 255, 255, 255)
+part_type_direction(part_energie, 0, 359, 0, 0)
+part_type_life(part_energie, 20, 40)
+part_type_orientation(part_energie, 0, 359, 10, 0, 0)
+part_type_shape(part_energie, pt_shape_flare)
+part_type_size(part_energie, 0.05, 0.2, -0.01, 0)
+part_type_speed(part_energie, 1, 3, 0, 0)
+/*
+part_energie2 = part_type_create()
+part_type_alpha2(part_energie2, 0.8, 0.8)
+part_type_color_rgb(part_energie2, 0, 0, 0, 255, 255, 255)
+part_type_direction(part_energie2, 0, 359, 0, 0)
+part_type_life(part_energie2, 2, 5)
+part_type_orientation(part_energie2, 0, 359, 10, 0, 0)
+part_type_shape(part_energie2, pt_shape_flare)
+part_type_size(part_energie2, 0.02, 0.15, 0, 0)
+part_type_speed(part_energie2, 1, 3, 0, 0)
+*/
+part_energie3 = part_type_create()
+part_type_life(part_energie3, 1, 3)
+part_type_orientation(part_energie3, 0, 359, 10, 0, 0)
+part_type_shape(part_energie3, pt_shape_flare)
+part_type_direction(part_energie, 0, 359, 0, 0)
+part_type_size(part_energie3, 0.1, 0.4, 0, 0)
+
+part_emit = part_emitter_create(global.part_sys)
